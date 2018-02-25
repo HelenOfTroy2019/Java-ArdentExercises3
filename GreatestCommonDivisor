@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class greatest_common_divisor {
+	
+	private static int GCD(int a, int b) {
+		return 1;
+	}
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.print("Enter first integer:");
+		int num1 = input.nextInt();
+		System.out.print("Enter second integer:");
+		int num2 = input.nextInt();
+		int num1factor = 0;
+		int num2factor = 0;
+		
+		
+			for (int a = num1-1; a>1; a = a -1) {
+				if (num1%a == 0) {
+					num1factor = a;
+				}
+			}
+			
+			for (int b = num2-1; b>1; b = b - 1) {
+				if (num2%b == 0) {
+					num2factor = b;
+				}
+			}
+			System.out.println(GCD(2, 4));
+	}
+
+}
